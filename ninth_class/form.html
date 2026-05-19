@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form action="">
+        <label for="username">Username:</label>
+        <br>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <label for="language">Language:</label>
+        <br>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="spanish" name="language" value="spanish">
+        <label for="spanish">Spanish</label>
+        <input type="checkbox" id="french" name="language" value="french">
+        <label for="french">French</label>
+        <br>
+        <label for="countries">Countries:</label>
+        <select id="countries" name="countries">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="pak">Pakistan</option>
+        </select>
+        <br>
+        <select name="country/city" id="">
+            <optgroup label="pakistan">
+                <option value="pak">Peshawar</option>
+                <option value="pak">Islamabad</option>
+                <option value="pak">Karachi</option>
+                <option value="pak">Lahore</option>
+            </optgroup>
+            <br>
+                <optgroup label="usa">
+                    <option value="usa">New York</option>
+                    <option value="usa">Los Angeles</option>
+                    <option value="usa">Chicago</option>
+                    <option value="usa">Houston</option>
+                </optgroup>
+        </select>
+        <br>
+        <input type="date">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
