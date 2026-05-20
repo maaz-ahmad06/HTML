@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ElectroMart – Product Price List</title>
+</head>
+<body>
+
+    <h1>ElectroMart – Product Price List</h1>
+
+    <!-- Native attributes used for basic grid visibility and padding -->
+    <table border="1" cellpadding="10" cellspacing="0">
+        <!-- 1. Header Section -->
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock Status</th>
+            </tr>
+        </thead>
+
+        <!-- 2. Main Data Section -->
+        <tbody>
+            <tr>
+                <td>Samsung A14</td>
+                <!-- rowspan="2" groups this cell vertically with the row below -->
+                <td rowspan="2">Mobile</td>
+                <td>$250</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>iPhone 13</td>
+                <!-- Category cell omitted because the row above spans down into this space -->
+                <td>$799</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>HP Laptop 15</td>
+                <!-- rowspan="2" groups the laptop category across two rows -->
+                <td rowspan="2">Laptop</td>
+                <td>$650</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>MacBook Pro</td>
+                <!-- Category cell omitted due to the rowspan above -->
+                <td>$1200</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+
+        <!-- 3. Summary Footer Section -->
+        <tfoot>
+            <tr>
+                <!-- colspan="4" stretches this single cell across all 4 columns -->
+                <td colspan="4">Total Products: 4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
